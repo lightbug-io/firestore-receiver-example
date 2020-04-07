@@ -54,9 +54,7 @@ First you need to install the `npm` dependencies of the functions:
 cd functions && npm install; cd ..
 ```
 
-This installs locally:
- - The Firebase SDK and the Firebase Functions SDK.
- - Tracking api deps
+This installs dependencies locally
 
 Deploy to Firebase using the following command:
 
@@ -75,4 +73,4 @@ The example will create collections under /incoming - view data there
 
 ## License
 
-© Lightbug Ltd, 2020. Licensed under an [Apache-2](../../LICENSE) license.
+© Lightbug Ltd, 2020. Licensed under an [Apache-2](./LICENSE) license.
