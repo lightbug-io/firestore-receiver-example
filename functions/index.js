@@ -46,13 +46,11 @@ exports.lbListener = functions.https.onRequest((req, res) => {
    }
 
    // Once confirmed, we'll receive all notifications
+   // See https://docs.lightbug.io/apps/cloud/account/notifications#api-push for details on the structure
     if(body.Type === 'Notification')
     {
-      // ref: https://api.thelightbug.com/docs/#definition-notification
       const notification = JSON.parse(body.Message);
-      // ref: https://api.thelightbug.com/docs/#definition-datapoint
       const datapoint = notification.datapoint;
-      // ref: https://api.thelightbug.com/docs/#definition-device
       const device = notification.device;
 
       // Example: log entries
