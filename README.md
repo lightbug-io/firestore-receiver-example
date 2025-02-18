@@ -4,15 +4,14 @@
 
 The function `lbListener` is created to receive HTTP POST messages from LB API.
 
-The URL of this function, eg:
-```
-https://us-central1-AAAA-BBBBB.cloudfunctions.net/lbListener
-```
-Should be used in the register_push example as the endpoint value
+The URL of this function would be something like `https://us-central1-AAAA-BBBBB.cloudfunctions.net/lbListener`
 
-Further reading:
+This URL should be used as the endpoint for an API Push in the Lightbug Cloud.
 
- - [Read more about the Firebase SDK for Cloud Functions](https://firebase.google.com/docs/functions)
+**Further reading**
+
+ - [Lightbug Cloud API Push (HTTP Webhooks) documentation](https://docs.lightbug.io/apps/cloud/account/notifications#api-push)
+ - [Firebase SDK for Cloud Functions](https://firebase.google.com/docs/functions)
 
 
 ## Initial setup, build tools and dependencies
@@ -29,8 +28,6 @@ You need to have installed the Firebase CLI. If you haven't run:
 npm install -g firebase-tools
 ```
 
-> Doesn't work? You may need to [change npm permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions).
-
 Login to firebase (if not already done) using
 ```bash
 firebase login
@@ -40,36 +37,32 @@ firebase login
 
 Create a Firebase Project on the [Firebase Console](https://console.firebase.google.com).
 
-
 Set up your Firebase project by running `firebase use --add`, select your Project ID and follow the instructions.
 
-
-
-
-## Deploy the app to prod
+## Deploy the app
 
 First you need to install the `npm` dependencies of the functions:
 
 ```bash
-cd functions && npm install; cd ..
+cd functions
+npm install
+cd ..
 ```
 
-This installs dependencies locally
-
-Deploy to Firebase using the following command:
+And deploy to Firebase using the following command:
 
 ```bash
 firebase deploy
 ```
 
-This deploys and activates the lbListener Function.
+This deploys and activates the `lbListener` Function.
 
-> The first time you call `firebase deploy` on a new project with Functions will take longer than usual.
+**Note**: The first time you call `firebase deploy` on a new project with functions, it will take longer than usual
 
 
 ## View results
 
-The example will create collections under /incoming - view data there
+The example will create collections under `/incoming` - view data there
 
 ## License
 
