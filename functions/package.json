@@ -1,6 +1,6 @@
 {
   "name": "lb-firebase-receiver-example",
-  "description": "A simple example for receiving Lightbug data into firestroe",
+  "description": "A simple example for receiving Lightbug data into firestore",
   "dependencies": {
     "firebase-admin": "~8.9.2",
     "firebase-functions": "^3.3.0",
