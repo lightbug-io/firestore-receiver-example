@@ -66,4 +66,4 @@ The example will create collections under `/incoming` - view data there
 
 ## License
 
-© Lightbug Ltd, 2020. Licensed under an [Apache-2](./LICENSE) license.
+© Lightbug Ltd, 2020. Licensed under an [MIT](./LICENSE) license.
